@@ -1,0 +1,37 @@
+<header>
+    <div class="icon__menu">
+        <i class="fas fa-bars" id="btn_open" (click)="ocultar()"></i>
+    </div>
+</header>
+<div class="menu__side" id="menu_side" [ngClass]="{ 'menu__side__move': toggleClass }">
+    <div class="name__page">
+        <img src="../../../assets/img/logo.png" alt="">
+        <h4>UCQ</h4>
+    </div>
+    <div class="options__menu">
+        <a [routerLink]="['/home']"   routerLinkActive="selected">
+            <div class="option">
+                <i class="fas fa-home" title="Inicio"></i>
+                <h4>Inicio</h4>
+            </div>
+        </a>
+        <a [routerLink]="['/usuario']"   routerLinkActive="selected">
+            <div class="option">
+                <i class="fa-solid fa-user" title="Usuario"></i>
+                <h4>Usuario</h4>
+            </div>
+        </a>
+        <a [routerLink]="['/alumnos']"   routerLinkActive="selected">
+            <div class="option">
+                <i class="fa-solid fa-users" title="Alumnos"></i>
+                <h4>Alumnos</h4>
+            </div>
+        </a>
+        <a [routerLink]="['/fechaLimite']"   routerLinkActive="selected">
+            <div class="option">
+                <i class="fa-solid fa-calendar" title="Fecha Limite"></i>
+                <h4>Fecha Limite</h4>
+            </div>
+        </a>
+    </div>
+</div>
